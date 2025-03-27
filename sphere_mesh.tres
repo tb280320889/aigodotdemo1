@@ -1,0 +1,4 @@
+[resource]
+resource_name = "SphereMesh"
+radius = 0.5
+height = 1.0

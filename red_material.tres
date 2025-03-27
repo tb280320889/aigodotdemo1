@@ -1,0 +1,3 @@
+[resource]
+resource_name = "StandardMaterial3D"
+albedo_color = Color(1, 0, 0, 1)

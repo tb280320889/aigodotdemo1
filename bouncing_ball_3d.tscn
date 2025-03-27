@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Material" uid="uid://djn5ktfmixitq" path="res://red_material.tres" id="1_qwesd"]
+[ext_resource type="SphereMesh" uid="uid://djn5ktfmixitq" path="res://sphere_mesh.tres" id="2_qwesd"]
+[ext_resource type="Script" uid="uid://djn5ktfmixitq" path="res://bouncing_ball.gd" id="3_qwesd"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_qwesd")
+material_override = ExtResource("1_qwesd")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+gravity_scale = 1.0
+mass = 1.0
+physics_material_override = SubResource("Material_override")
+script = ExtResource("3_qwesd")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+shape = SphereShape3D.new()
