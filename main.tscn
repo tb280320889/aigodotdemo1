@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" uid="uid://djn5ktfmixitq" path="res://bouncing_ball_3d.tscn" id="1_qwesd"]
+
+[node name="Main" type="Node3D"]
+
+[node name="BouncingBall" type="Node3D" parent="."]
+instance = ExtResource("1_qwesd")
